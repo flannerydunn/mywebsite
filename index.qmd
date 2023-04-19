@@ -4,12 +4,12 @@ about:
   template: jolla
   image: Dunn.jpg 
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com/akesslerdc
+    - icon: instagram
+      text: instagram
+      href: https://www.instagram.com/flannerydunn/?hl=en 
     - icon: github
       text: Github
-      href: https://github.com/amkessler
+      href: https://github.com/flannerydunn 
 ---
 
 Hi, I'm Flannery and I'm a student at the George Washington University in Washington. I like rowing, cats and listening to podcasts. 
