@@ -1,0 +1,75 @@
+---
+title: "News Story"
+---
+
+Here is an article I wrote about Google Workspace's Time Insights feature for my technical writing internship at Trimble Inc.!
+
+## **New Color Customization Feature to Manage Your Time in Google Calendar**
+
+##### *12 April 2023*
+
+##### ***By: Flannery Dunn***
+
+##### *Audience: All*
+
+*In 2021, Google launched a feature in Google Calendar to help understand how you use your time. Now, Google has expanded this update with a customizable breakdown feature to categorize how users spend their time. [With Time Insights in Calendar](https://support.google.com/calendar/answer/10738043), you can track time spent on activities by naming and assigning corresponding color labels to events.*
+
+## **TABLE OF CONTENTS**
+
+### SUMMARY
+
+### GETTING STARTED 
+
+### TIMELINE OF ROLLOUT PACE
+
+### AVAILABILITY
+
+### FURTHER RESOURCES
+
+#### **SUMMARY**
+
+It's easier to understand your day with a breakdown of events in Time Insights. The new Google Calendar feature allows you to name and assign a color to your Google Calendar events. The update allows you to easily track your time spent on activities, such as work events, personal activities, or meetings with colleagues. The feature also allows you to view how much time you spend in meetings and how often you attend them. Google Calendar offers you useful meeting-related data through Time Insights, which may improve your day, your productivity, and your workflow by providing you with better insights on how you spend your time.
+
+**GETTING STARTED**
+
+By default, this feature is already on in your Calendar. From the left side of your Google Calendar view, you can access your personal Time Insights by selecting 'More Insights'. To add color labels and name your personal events, click the pen icon. For example, you may assign certain events in Calendar as a specific event name, or label them as "Personal." Time Insights then displays each event and organizes your calendar by time. 
+
+![](time.png){fig-align="center" width="293"}
+
+Only you, the calendar owner, may see the data on Time Insights. However, users may allow their Workspace manager accessibility by granting permission to view their calendar. Users may minimize the Time Insights function, which is enabled by default, but Workspace administrators have the ability to turn the feature off.
+
+![*Time Insights in Google Calendar helps you better organize your time*](time2.png){fig-align="center" width="568"}
+
+For more information on how to view Time Insights in Calendar, watch this video [here](https://www.youtube.com/watch?v=UlS9Ll1UNmY).
+
+If you wish to turn the Time Insights feature off for you or your organization, visit the Help Center [here](https://support.google.com/a/answer/10985399). 
+
+**TIMELINE OF ROLLOUT PACE**
+
+Extended rollout of the Time Insights feature in Google Calendar started on August 16, 2022 for Rapid Release domains. Scheduled release domains rollout began on August 30, 2022. 
+
+**AVAILABILITY**
+
+The Google Calendar Time Insights feature is available to all Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, Education Plus and Nonprofits customers. 
+
+**FURTHER RESOURCES**
+
+[View how you spend time in meetings](https://support.google.com/calendar/answer/10738043)
+
+[Use color labels to track calendar entries](https://support.google.com/calendar/answer/12377581)
+
+[Share your calendar with someone](https://support.google.com/calendar/answer/37082?hl=en&ref_topic=10510447&sjid=3484488394246238144-NA)
+
+[Administrators: Set Calendar sharing options](https://support.google.com/a/answer/60765?hl=en&ref_topic=9201&sjid=3484488394246238144-NA)
+
+**CONTACT US**
+
+For Google or Chrome technical issues, please open a ticket at [ishelp.trimble.com](http://ishelp.trimble.com/).
+
+**SOURCES**
+
+[New color categorization in Calendar to better understand how you're spending your time](https://workspaceupdates.googleblog.com/2022/08/color-categorization-time-insights-google-calendar.html)
+
+[How to: View Time Insights in Google Calendar](https://www.youtube.com/watch?v=UlS9Ll1UNmY)
+
+[How to: Schedule Focus time with Time Insights in Google Calendar](https://www.youtube.com/watch?v=JFQICar5DRA)

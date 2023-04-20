@@ -12,7 +12,7 @@ about:
       href: https://github.com/flannerydunn 
 ---
 
-Hi, I'm Flannery and I'm a student at the George Washington University in Washington. I like rowing, cats and listening to podcasts. 
+Hi, I'm Flannery and I'm a student at the George Washington University in Washington. I like rowing, cats and listening to podcasts.
 
 ## Education
 

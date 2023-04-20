@@ -1,0 +1,137 @@
+---
+title: "Washington State Interactive Census Map"
+author: "Flannery Dunn"
+format:
+  html:
+    self-contained: true
+    code-fold: true
+    code-tools: true
+---
+
+# Interactive Census Map of Washington State 
+
+## *Showing Counties' Median Population and Income*
+
+### Code:
+
+#chosing the variables I want (median income and age)
+
+myvars \<- c(totalpop = "B01003_001",
+
+medincome = "B19013_001",
+
+medage = "B01002_001"
+
+#pull for WA counties
+
+wa_counties_withgeo \<- get_acs(geography = "county",
+
+variables = c(myvars),
+
+state = "WA",
+
+output = "wide",
+
+geometry = TRUE)
+
+wa_counties_withgeo
+
+#all counties in the US
+
+all_counties_withgeo \<- get_acs(geography = "county",
+
+variables = c(myvars),
+
+output = "wide",
+
+geometry = TRUE)
+
+all_counties_withgeo
+
+wa_counties_withgeo \<- wa_counties_withgeo %\>%
+
+select(-ends_with("M"))
+
+wa_counties_withgeo
+
+colnames(wa_counties_withgeo) \<- sub("E\$", "", colnames(wa_counties_withgeo)) \# \$ means end of string only
+
+wa_counties_withgeo
+
+#Mapping WA counties with mapview
+
+mapview(wa_counties_withgeo, zcol = "medincome")
+
+#Customize colors!
+
+mapview(wa_counties_withgeo, zcol = "medincome",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1)
+
+#Both maps together interactive
+
+map_income \<- mapview(wa_counties_withgeo, zcol = "medincome",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1)
+
+map_age \<- mapview(wa_counties_withgeo, zcol = "medage",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1)
+
+map_income \| map_age
+
+mapview(wa_counties_withgeo, zcol = "medincome",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1,
+
+legend = FALSE,
+
+label = FALSE,
+
+popup = FALSE)
+
+#Customizing my labels
+
+mylabel \<- glue::glue("{wa_counties_withgeo\$NAM} {wa_counties_withgeo\$medincome}")
+
+mapview(wa_counties_withgeo, zcol = "medincome",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1,
+
+label = mylabel)
+
+#Customizing my popups
+
+mypopup \<- glue::glue("\<strong\>{wa_counties_withgeo\$NAM}\</strong\>\<br /\>
+
+Total Population: {wa_counties_withgeo\$totalpop}\<br /\>
+
+Median Income: {wa_counties_withgeo\$medincome}") %\>%
+
+lapply(htmltools::HTML)
+
+\# mylabel \<- glue::glue("{all_data\$State} {all_data\$PctChange10_20}%") %\>%
+
+\# lapply(htmltools::HTML)
+
+head(mypopup)
+
+mapview(wa_counties_withgeo, zcol = "medincome",
+
+col.regions = RColorBrewer::brewer.pal(9, "Greens"),
+
+alpha.regions = 1,
+
+popup = mypopup)
+
+###### 
