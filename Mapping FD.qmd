@@ -13,17 +13,16 @@ format:
 ## *Showing Counties' Median Population and Income*
 
 ```{r}
+mylabel <- glue::glue("{wa_counties_withgeo$NAM} {wa_counties_withgeo$medincome}")
+
+
 mapview(wa_counties_withgeo, zcol = "medincome", 
          col.regions = RColorBrewer::brewer.pal(9, "Greens"), 
          alpha.regions = 1,
-         popup = mypopup)
+         label = mylabel)
 ```
 
 ## CODE:
-
-```{r}
-#census_api_key("2a6f8c21a30d3024e038d67d7d4eba647dc79cd4", install=TRUE)
-```
 
 ```{r}
 knitr::opts_chunk$set(echo = TRUE)
@@ -49,8 +48,6 @@ wa_counties_withgeo <- get_acs(geography = "county",
                        geometry = TRUE)
 
 wa_counties_withgeo
-
-
 ```
 
 ```{r}
@@ -122,29 +119,3 @@ mapview(wa_counties_withgeo, zcol = "medincome",
          alpha.regions = 1,
          label = mylabel)
 ```
-
-```{r}
-mypopup <- glue::glue("<strong>{wa_counties_withgeo$NAM}</strong><br />
-                      Total Population: {wa_counties_withgeo$totalpop}<br />
-                      Median Income: {wa_counties_withgeo$medincome}") %>% 
-  lapply(htmltools::HTML)
-
-# mylabel <- glue::glue("{all_data$State} {all_data$PctChange10_20}%") %>%
-#   lapply(htmltools::HTML)
-
-
-head(mypopup)
-```
-
-```{r}
-mapview(wa_counties_withgeo, zcol = "medincome", 
-         col.regions = RColorBrewer::brewer.pal(9, "Greens"), 
-         alpha.regions = 1,
-         popup = mypopup)
-```
-
-```{r}
-knitr::include_url("https://ededae6cb2944e19abd3bd59c1c38eab.app.posit.cloud/file_show?path=%2Fcloud%2Fproject%2Ftry1.html")
-```
-
-\`\`\`

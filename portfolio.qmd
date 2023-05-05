@@ -1,9 +1,0 @@
----
-title: "Portfolio"
----
-
-Hi there this is my portfolio page! Yay!
-
-You can access my short YouTube video on shooting film [here](https://www.youtube.com/watch?v=uSANEr2N250).
-
-You can view my digital art and podcasts on this [external portfolio page](https://flannerydunn.wixsite.com/flannery-dunn-portfo/digital-media) (I don't know how to link them to this page yet).
