@@ -2,7 +2,7 @@
 title: "Paper Written at GW"
 ---
 
-Here is a paper I wrote about Section 230 in my Media Organizations and Audiences Course at GW this spring!
+Here is a paper I wrote about Section 230 in my Media Organizations and Audiences Course at GW this spring! The paper itself describes the legal origins of Section 230, its effects on social media sites with a specific case study on Facebook, and an argument to reform the law in order to address the harm it has allowed.
 
 # **The Case Against Section 230** 
 
