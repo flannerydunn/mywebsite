@@ -35,4 +35,24 @@ numbers <- c(2, 4, 6, 8, 10)
 mean(numbers)
 ```
 
-This function will result in **`6`**, since **`(2 + 4 + 6 + 8 + 10) / 5 = 6`**.
+This function will result in **`6`**, because **`(2 + 4 + 6 + 8 + 10) / 5 = 6`**.
+
+...
+
+You can also modify the function to return a sentence about the equation instead of just the result:
+
+```{r}
+Flannery_sum <- function(x, y) {
+  z <- x + y
+  sentence <- paste("The sum of", x, "and", y, "is", z)
+  return(sentence)
+}
+```
+
+In this example, the **`Flannery_sum`** function takes two input arguments, **`x`** and **`y`**, and calculates their sum. It then creates a sentence using the **`paste()`** function, which joins the input variables and strings them together.
+
+You can still use numbers as input variables to get the result:
+
+```{r}
+Flannery_sum(2, 3)
+```
