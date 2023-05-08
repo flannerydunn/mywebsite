@@ -1,3 +1,38 @@
 ---
 title: "R Concept Walkthrough"
 ---
+
+# Using Functions in R: Beginner Walk-through
+
+A function is a block of code in R that performs a specific task. Functions take one or more input arguments, perform operations on those arguments, and return a result. In R, you can use built-in functions, as well as create your own custom functions.
+
+## **How to create a function in R**
+
+To create a function in R, you use the **`function()`** keyword, followed by the function name and the input values in parentheses. Here is an example of a simple function that takes two values, adds them together, and returns the result:
+
+```{r}
+Flannery_sum <- function(x, y) {
+  z <- x + y
+  return(z)
+}
+```
+
+In this example, my_sum is the name of the function, and x and y are the input arguments. The function performs the addition operation z \<- x + y and returns the result z.
+
+Then, to use this function, you use 2 numbers as input argument and then get the result:
+
+```{r}
+Flannery_sum(2, 3)
+
+```
+
+You can also use the **`mean()`** function to calculate the average of a set of numbers.
+
+For example:
+
+```{r}
+numbers <- c(2, 4, 6, 8, 10)
+mean(numbers)
+```
+
+This function will result in **`6`**, since **`(2 + 4 + 6 + 8 + 10) / 5 = 6`**.
