@@ -56,3 +56,21 @@ You can still use numbers as input variables to get the result:
 ```{r}
 Flannery_sum(2, 3)
 ```
+
+You can also use the **`paste()`** function to make sentences. An example of how you can use the **`paste()`** function to create a sentence is:
+
+```{r}
+fruit1 <- "apples"
+fruit2 <- "bananas"
+Flannerypreference <- paste("I prefer to eat", fruit1, "and", fruit2)
+
+```
+
+In this example, I used the **`paste()`** function to join four separate parts of the eventual sentence together: **`"I prefer to eat"`**, the value of the **`fruit1`** variable, **`"and"`**, and the value of the **`fruit2`** variable.
+
+Therefore, using the next line of code below, the sentence is formed.
+
+```{r}
+print(Flannerypreference)
+
+```
