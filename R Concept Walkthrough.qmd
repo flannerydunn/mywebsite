@@ -68,9 +68,25 @@ Flannerypreference <- paste("I prefer to eat", fruit1, "and", fruit2)
 
 In this example, I used the **`paste()`** function to join four separate parts of the eventual sentence together: **`"I prefer to eat"`**, the value of the **`fruit1`** variable, **`"and"`**, and the value of the **`fruit2`** variable.
 
-Therefore, using the next line of code below, the sentence is formed.
+Therefore, using the next line of code below, the sentence is formed:
 
 ```{r}
 print(Flannerypreference)
+
+```
+
+You can also join multiple arguments together (vectors). You use the c() function or combine function for this.
+
+```{r}
+fruits <- c("apples.", "bananas.", "oranges.")
+verbs <- c("I like", "I love", "I do not like")
+sentence <- paste(verbs, "to eat", fruits)
+
+```
+
+Then, I used the **`paste()`** function with three arguments: **`verbs`**, **`"to eat"`**, and **`fruits`**.
+
+```{r}
+print(sentence)
 
 ```
