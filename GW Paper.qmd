@@ -64,7 +64,7 @@ This revision would effectively be able to hold providers accountable for their 
 
 Regardless of the route taken to make online spaces safer, and in turn the real world, the failures of Section 230 must be corrected. Whether by ethical motivations or legal, there is an existing duty to ensure online safety, it simply depends on what will be the external factor to tip the scale towards accountability.
 
-Works Cited
+### Works Cited
 
 Cramer, Benjamin. *From Liability to Accountability: The Ethics of Citing Section 230 to Avoid the Obligations of Running a Social Media Platform.* Journal of Information Policy 1 May 2020; 10 123--150. doi: <https://doi.org/10.5325/jinfopoli.10.2020.0123>
 

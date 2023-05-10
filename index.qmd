@@ -2,7 +2,7 @@
 title: "Flannery M. Dunn"
 about:
   template: jolla
-  image: Dunn.jpg
+  image: FDunn.png
   links:
     - icon: instagram
       text: instagram
@@ -12,15 +12,13 @@ about:
       href: https://github.com/flannerydunn 
 ---
 
-Hi, I'm Flannery and I'm a student at the George Washington University in Washington. I like rowing, cats and listening to podcasts.
+Hi, I'm Flannery and I'm a student at the George Washington University in Washington. I enjoy rowing, I prefer cats to dogs and I love listening to podcasts.
 
 ## Education
 
-George Washington University
+George Washington University (2020 - Present)
 
-Holy Names Academy
-
-Assumption Saint Bridget
+Holy Names Academy (2016-2020)
 
 ## Skills
 
