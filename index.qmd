@@ -2,7 +2,7 @@
 title: "Flannery M. Dunn"
 about:
   template: jolla
-  image: Dunn.jpg 
+  image: Dunn.jpg
   links:
     - icon: instagram
       text: instagram

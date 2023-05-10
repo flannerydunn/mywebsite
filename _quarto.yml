@@ -13,9 +13,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - portfolio.qmd
-      - walkthrough.qmd
+      - Portfolio.qmd
+      - News Story.qmd
+      - Breaking News Story.qmd
+      - Interactive Census Map.qmd
+      - GW Paper.qmd
+      - R Concept Walkthrough.qmd
       
 
 
