@@ -1,6 +1,17 @@
 ---
 title: "Breaking News Story"
 ---
+
+BUTTE, MONTANA - According to the latest election results, 55.7% of voters in Butte-Silver Bow County cast their ballots for Democratic candidates in the 2020 election, while 41.5% voted Republican. This represents a significant increase in support for the Democratic party compared to the 2016 election, when 52% of voters supported the Democratic candidate and 38% voted Republican.
+
+The Butte-Silver Bow County election officials released the data earlier today, revealing that the Democratic Party saw a 3.31% increase in support in the 2020 election, while the Republican Party experienced a 2.74% decrease in support.
+
+County officials attributed the Democratic Party's success to their efforts to connect with voters on key issues such as healthcare, education, and the environment. They also noted that voter turnout was higher in 2020 than in previous elections.
+
+The results in Butte-Silver Bow County reflect a broader trend across the country, as the Democratic Party gained ground in several key states during the 2020 election. However, the county remains a stronghold for the Republican Party, with many residents continuing to support their conservative values and policies.
+
+As the political landscape in Montana and the rest of the country continues to shift, both parties will be closely watching the results of future elections to see how they can best connect with voters and build support for their respective agendas.
+
 ```{r}
 library(tidyverse)
 library(tidyverse)
@@ -10,9 +21,9 @@ library(jsonlite)
 library(kableExtra)
 library(here)
 ```
+
 ```{r}
 counties_demographics <- readRDS("counties_demographics.rds")
 filter(counties_demographics, state_code == "MT")%>%
   filter(county_name == "Silver Bow County")
 ```
-
