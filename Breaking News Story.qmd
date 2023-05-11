@@ -1,3 +1,18 @@
 ---
 title: "Breaking News Story"
 ---
+```{r}
+library(tidyverse)
+library(tidyverse)
+library(janitor)
+library(httr)
+library(jsonlite)
+library(kableExtra)
+library(here)
+```
+```{r}
+counties_demographics <- readRDS("counties_demographics.rds")
+filter(counties_demographics, state_code == "MT")%>%
+  filter(county_name == "Silver Bow County")
+```
+
