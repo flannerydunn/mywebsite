@@ -207,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The Butte-Silver Bow County election officials released the data earlier today, revealing that the Democratic Party saw a 3.31% increase in support in the 2020 election, while the Republican Party experienced a 2.74% decrease in support.</p>
 <p>County officials attributed the Democratic Party’s success to their efforts to connect with voters on key issues such as healthcare, education, and the environment. They also noted that voter turnout was higher in 2020 than in previous elections.</p>
 <p>The results in Butte-Silver Bow County reflect a broader trend across the country, as the Democratic Party gained ground in several key states during the 2020 election. However, the county remains a stronghold for the Republican Party, with many residents continuing to support their conservative values and policies.</p>
-<p>As the political landscape in Montana and the rest of the country continues to shift, both parties will be closely watching the results of future elections to see how they can best connect with voters and build support for their respective agendas.</p>
+<p>Despite the shift in voting patterns, Butte-Silver Bow County remains a closely contested battleground in the state of Montana. Both parties are likely to continue to focus on the county in future elections, with Republicans hoping to win back support from some of their former voters and Democrats hoping to build on their recent gains.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -251,15 +251,11 @@ The following object is masked from 'package:dplyr':
 
     group_rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /cloud/project</code></pre>
-</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>counties_demographics <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"counties_demographics.rds"</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(counties_demographics, state_code <span class="sc">==</span> <span class="st">"MT"</span>)<span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(county_name <span class="sc">==</span> <span class="st">"Silver Bow County"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>counties_demographics <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"counties_demographics.rds"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(counties_demographics, state_code <span class="sc">==</span> <span class="st">"MT"</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(county_name <span class="sc">==</span> <span class="st">"Silver Bow County"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 27
   geoid county   count…¹ state…² state…³ pct_b…⁴ pct_m…⁵ pct_r…⁶ pct_e…⁷ pct_e…⁸
